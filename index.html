@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ToDo App</h1>
+
+        <div class="inputBox">
+            <input type="text" placeholder="Enter ToDo here" id="getTodoInput">
+            <span class="crossIcon" onclick="emptyTodoInput()" id="crossIcon">X</span>
+        </div>
+
+        <button type="button" onclick="addTodo()">Add ToDo</button>
+
+        <ul class="todo_list" ondblclick="makeInputEditable(event)" onclick="handleClick(event)"></ul>
+    </div>
+
+    <!-- javascript -->
+    <script src="todo.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
